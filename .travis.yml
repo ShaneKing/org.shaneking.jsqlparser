@@ -1,0 +1,15 @@
+language: java
+sudo: false # faster builds
+
+cache:
+  directories:
+    - $HOME/.m2
+
+jdk:
+  - openjdk8
+
+before_install:
+  - pip install --user codecov
+
+after_success:
+  - codecov
