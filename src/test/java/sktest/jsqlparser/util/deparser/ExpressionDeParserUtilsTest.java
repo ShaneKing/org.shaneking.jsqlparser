@@ -1,20 +1,12 @@
-package org.shaneking.jsqlparser.util.deparser;
+package sktest.jsqlparser.util.deparser;
 
 import net.sf.jsqlparser.JSQLParserException;
-import org.junit.After;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
+import org.shaneking.jsqlparser.util.deparser.ExpressionDeParserUtils;
+import org.shaneking.test.SKUnit;
 
-public class ExpressionDeParserUtilsTest {
-
-  @Before
-  public void setUp() throws Exception {
-  }
-
-  @After
-  public void tearDown() throws Exception {
-  }
+public class ExpressionDeParserUtilsTest extends SKUnit {
 
   @Test
   public void addSchemaAliasPrefix() throws JSQLParserException {
